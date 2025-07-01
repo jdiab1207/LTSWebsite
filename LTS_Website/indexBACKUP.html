@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>LTS Website</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-lugx-gaming.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+  </head>
+
+  <script>
+function includeHTML() {
+  const elements = document.querySelectorAll('[include-html]');
+  elements.forEach(async (el) => {
+    const file = el.getAttribute('include-html');
+    if (!file) return;
+
+    try {
+      const response = await fetch(file);
+      const content = await response.text();
+      el.innerHTML = content;
+      el.removeAttribute('include-html');
+      includeHTML(); // Recursively check inside includes
+    } catch (e) {
+      el.innerHTML = "Page not found.";
+    }
+  });
+}
+includeHTML();
+</script>
+
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="" style="width: 158px;">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li><a href="index.html" class="active">Home</a></li>
+                      <li><a href="shop.html">Our Shop</a></li>
+                      <li><a href="services.html">Services</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                      <li><a href="#">Creator Hub</a></li>
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="caption header-text">
+            <h2>TURN YOUR BRAND INTO A GAME!</h2>
+            <p>Elevate Your Content with Our Unique, Curated Mobile Gaming Experiences.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-2">
+          <div class="right-image">
+            <img src="assets/images/banner-image.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section what-we-offer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2>What We Offer</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="offer-box">
+          <h4>NO UP-FRONT COST</h4>
+          <p>We fund 100% of the development costs to launch the game, with no risk to you.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="offer-box">
+          <h4>FULL CUSTOMIZATION</h4>
+          <p>Your game is fully tailored to your brand and content, ensuring a unique experience for your audience.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 mb-4">
+        <div class="offer-box">
+          <h4>ONGOING SUPPORT</h4>
+          <p>We provide continuous updates and customer support to keep your game running smoothly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- Carousel -->
+
+
+<div class="game-carousel">
+  <div class="game-arrow left" onclick="prevGameSlide()">←</div>
+  <div class="game-frame">
+    <div class="game-carousel-inner" id="gameCarouselInner">
+      <div class="game-bg-fade" id="gameBgFade"></div>
+      <!-- Slide 1 -->
+      <div class="game-slide">
+        <div class="game-content">
+          <div class="game-label released">Released</div>
+          <div class="game-title">Shawarma Run</div>
+          <div class="game-paragraph">
+            The full experience is out now! Sneak, throw, and outwit your enemies in this hilarious stealth game.
+          </div>
+        </div>
+        <video class="game-screenshot" autoplay muted loop playsinline>
+            <source src="https://imgur.com/w0cZqpB.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="game-slide">
+        <div class="game-content">
+          <div class="game-label prototype">Prototype</div>
+          <div class="game-title">CaseOh vs The World</div>
+          <div class="game-paragraph">
+            Testing core mechanics: sneak past guards and dodge cameras using wacky gadgets and distractions.
+          </div>
+        </div>
+        <video class="game-screenshot" autoplay muted loop playsinline>
+            <source src="https://i.imgur.com/Mz5ik4h.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+
+      <!-- Slide 3 -->
+      <div class="game-slide">
+        <div class="game-content">
+          <div class="game-label prototype">Prototype</div>
+          <div class="game-title">Beast Protect</div>
+          <div class="game-paragraph">
+            Trying new level mechanics: pressure plates, moving boxes, and secret gadget testing.
+          </div>
+        </div>
+        <video class="game-screenshot" autoplay muted loop playsinline>
+            <source src="https://imgur.com/KW84zb9.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+
+      <!-- Slide 4 -->
+      <div class="game-slide">
+        <div class="game-content">
+          <div class="game-label development">Development</div>
+          <div class="game-title">Castle Blast</div>
+          <div class="game-paragraph">
+            We're refining visuals, polishing mechanics, and prepping for our next big release.
+          </div>
+        </div>
+        <video class="game-screenshot" autoplay muted loop playsinline>
+            <source src="https://imgur.com/bOr7IZi.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+
+    </div>
+  </div>
+
+  <div class="game-arrow right" onclick="nextGameSlide()">→</div>
+</div>
+
+<script>
+
+  const gameCarouselInner = document.getElementById('gameCarouselInner');
+  const gameBgFade = document.getElementById('gameBgFade');
+  const totalSlides = 4;
+  let gameIndex = 0;
+  let autoSlideInterval;
+
+  function updateGameCarousel() {
+    // Slide content
+    const translateXPercent = -(gameIndex * 100) / totalSlides;
+    gameCarouselInner.style.transform = `translateX(${translateXPercent}%)`;
+
+    // Background fade
+    const paddedIndex = String(gameIndex + 1).padStart(2, '0');
+    const newBg = `../images/trending-${paddedIndex}.jpg`;
+
+    // Fade out background
+    gameBgFade.style.opacity = 0;
+
+    // After fade-out, switch image and fade in
+    setTimeout(() => {
+      gameBgFade.style.backgroundImage = `url('${newBg}')`;
+      gameBgFade.style.opacity = 1;
+    }, 500);
+  }
+
+  function nextGameSlide() {
+    gameIndex = (gameIndex + 1) % totalSlides;
+    updateGameCarousel();
+    stopAutoSlide();
+  }
+
+  function prevGameSlide() {
+    gameIndex = (gameIndex - 1 + totalSlides) % totalSlides;
+    updateGameCarousel();
+    stopAutoSlide();
+  }
+
+  function startAutoSlide() {
+    autoSlideInterval = setInterval(() => {
+      gameIndex = (gameIndex + 1) % totalSlides;
+      updateGameCarousel();
+    }, 3000);
+  }
+
+  function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    updateGameCarousel();
+    startAutoSlide();
+  });
+</script>
+
+
+
+
+      <!-- Carousel -->
+
+ <section class="pricing-section">
+  <h2 class="pricing-title">Choose Your Plan</h2>
+
+  <div class="carousel-wrapper">
+    <button class="carousel-arrow left" aria-label="Previous">&#8592;</button>
+
+    <div class="carousel-track">
+      <div class="carousel-slide">
+        <div class="card">
+      <div class="card-header">
+        <h3>General</h3>
+        <p class="price">$0</p>
+        <p class="tagline">No risk, all brand</p>
+    <a href="#" class="cta-button calendly-trigger">Start for Free</a>
+</div>
+      <div class="feature-list">
+        <p>→ Custom-Branded Game</p>
+        <p>→ Marketing Support</p>
+        <p>→ App Store & Play Store Publishing</p>
+        <p>→ Analytics Dashboard Access</p>
+        <p>→ Cross-Promotion with Other Games</p>
+        <p>→ Influencer Co-Branding Options</p>
+        <p>→ 1 Year Support</p>
+        <p>→ In-Game Ads (Mandatory)</p>
+        <p>→ Game Ownership: <strong>35%</strong></p>
+      </div>
+        </div>
+      </div>
+
+      <div class="carousel-slide">
+        <div class="card">
+   		   <div class="card-header">
+     	   <h3>Creator Plus</h3>
+     	   <p class="price">$25,000</p>
+   	    <p class="tagline">Keep 65% of revenue</p>
+   	     <a href="#" class="cta-button calendly-trigger">Book a Call</a>
+    	  </div>
+      <div class="feature-list">
+        <p>→ Custom-Branded Game</p>
+        <p>→ Marketing Support</p>
+        <p>→ App Store & Play Store Publishing</p>
+        <p>→ Analytics Dashboard Access</p>
+        <p>→ Cross-Promotion with Other Games</p>
+        <p>→ Influencer Co-Branding Options</p>
+        <p>→ 1 Year Support</p>
+        <p>→ Priority Support</p>
+        <p>→ Published Under Your Name</p>
+        <p>→ In-Game Ads (Mandatory)</p>
+        <p>→ Upfront Payment Required</p>
+        <p>→ Game Ownership: <strong>65%</strong></p>
+      </div>
+        </div>
+      </div>
+
+      <div class="carousel-slide">
+        <div class="card">
+<div class="card-header">
+  <h3>Enterprise</h3>
+  <p class="price">$250,000</p>
+  <p class="tagline">You own everything</p>
+  <a href="#" class="cta-button calendly-trigger">Book a Call</a>
+</div>
+      <div class="feature-list">
+        <p>→ Custom-Branded Game</p>
+        <p>→ Marketing Support</p>
+        <p>→ App Store & Play Store Publishing</p>
+        <p>→ Analytics Dashboard Access</p>
+        <p>→ Cross-Promotion with Other Games</p>
+        <p>→ Influencer Co-Branding Options</p>
+        <p>→ 1 Year Support</p>
+        <p>→ Priority Support</p>
+        <p>→ Published Under Your Name</p>
+        <p>→ Ownership of Game/IP</p>
+        <p>→ Exclusive Game Concept</p>
+        <p>→ Upfront Payment Required</p>
+        <p>→ In-Game Ads (Optional)</p>
+        <p>→ Game Ownership: <strong>100%</strong></p>
+      </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-arrow right" aria-label="Next">&#8594;</button>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const track = document.querySelector('.carousel-track');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const prevBtn = document.querySelector('.carousel-arrow.left');
+    const nextBtn = document.querySelector('.carousel-arrow.right');
+    let currentSlide = 0;
+
+    function updateCarousel() {
+      const slideWidth = slides[0].getBoundingClientRect().width;
+track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+      if (currentSlide < slides.length - 1) {
+        currentSlide++;
+        updateCarousel();
+      }
+    });
+
+    prevBtn.addEventListener('click', () => {
+      if (currentSlide > 0) {
+        currentSlide--;
+        updateCarousel();
+      }
+    });
+
+    // Make sure it resizes correctly
+    window.addEventListener('resize', updateCarousel);
+
+    updateCarousel();
+  });
+</script>
+
+
+<!-- Calendly Popup Modal -->
+<div id="calendly-popup" class="calendly-popup-overlay">
+  <div class="calendly-popup-content">
+    <button class="calendly-close">&times;</button>
+    <div class="calendly-inline-widget"
+      data-url="https://calendly.com/joel-lemontreestudio/mobile-game-discussion"
+      style="min-width:320px;height:700px;">
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  let calendlyLoaded = false;
+
+  function loadCalendlyScript(callback) {
+    if (calendlyLoaded) {
+      callback();
+      return;
+    }
+
+    const script = document.createElement("script");
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.onload = function () {
+      calendlyLoaded = true;
+      callback();
+    };
+    document.body.appendChild(script);
+  }
+
+  document.querySelectorAll('.calendly-trigger').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const popup = document.getElementById('calendly-popup');
+      if (popup) popup.style.display = 'flex';
+
+      loadCalendlyScript(() => {
+        console.log("Calendly script loaded.");
+      });
+    });
+  });
+
+  const closeBtn = document.querySelector('.calendly-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', function () {
+      document.getElementById('calendly-popup').style.display = 'none';
+    });
+  }
+
+  const popupOverlay = document.getElementById('calendly-popup');
+  if (popupOverlay) {
+    popupOverlay.addEventListener('click', function (e) {
+      if (e.target === this) {
+        this.style.display = 'none';
+      }
+    });
+  }
+});
+</script>
+
+
+
+  
+  
+  <div class="section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="shop">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-heading">
+                  <h6>Get Started</h6>
+                  <h2>Schedule a meeting with us and start <em>earning</em>!</h2>
+                </div>
+                <p>Start monetizing your audience in a new, organic way.</p>
+                <div class="main-button">
+                <a href="#" class="cta-button calendly-trigger">Book a Call</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-2 align-self-end">
+          <div class="subscribe">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-heading">
+                  <h2>Turn Your Content into a Playable Experience</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<footer>
+  <!-- Top Section -->
+  <div class="footer-top">
+    <div class="footer-logo"></div>
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>Our Studio</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Our Games</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Game Design</a></li>
+          <li><a href="#">Game Development</a></li>
+          <li><a href="#">Art Director</a></li>
+          <li><a href="#">Multiplatform</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">License</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Say Hello</h4>
+        <ul>
+          <li><a href="mailto:joel@lemontreestudio.games">joel@lemontreestudio.games</a></li>
+          <li><a href="#">CHAT WITH US</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Section -->
+  <div class="footer-bottom-banner">
+    <div class="footer-text">
+      <p class="footer-left">Lemon Tree Studio is an independent game studio making original games for PC, consoles, and mobile platforms.</p>
+      <p class="footer-right">© 2025 Lemon Tree Studio Inc. All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>

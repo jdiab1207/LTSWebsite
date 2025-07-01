@@ -1,0 +1,88 @@
+<header class="header-area header-sticky">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="main-nav">
+          <a href="index.html" class="logo">
+            <img src="assets/images/logo.png" alt="Lemon Tree Studio Logo" style="width: 158px;">
+          </a>
+          <ul class="nav">
+<!--
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Our Shop</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#" id="creatorHubBtn">Creator Hub</a></li>
+            -->
+          </ul>
+          <a class='menu-trigger' id="menuTrigger" href="javascript:void(0);" aria-label="Open navigation menu" tabindex="0">
+            <span>Menu</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Creator Hub Modal -->
+<div id="creatorHubModal" class="creator-hub-modal" style="display:none;">
+  <div class="creator-hub-modal-content">
+    <span class="creator-hub-close" id="creatorHubClose">&times;</span>
+    <h2>Creator Hub Coming Soon</h2>
+    <p style="font-size: 1rem; color: #888;">Here you'll be able to see your games analytics.</p>
+  </div>
+</div>
+<!--
+<script>
+// Ensure burger menu works after dynamic include and on window resize
+(function() {
+  function setupBurgerMenu() {
+    var trigger = document.getElementById('menuTrigger');
+    var nav = document.querySelector('.header-area .nav');
+    if (trigger && nav) {
+      // Always reset nav display on load
+      if (window.innerWidth <= 991) {
+        nav.style.display = 'none';
+      } else {
+        nav.style.display = '';
+      }
+      trigger.addEventListener('click', function(e) {
+        e.preventDefault();
+        trigger.classList.toggle('active');
+        if (window.innerWidth <= 991) {
+          if (nav.style.display === 'block') {
+            nav.style.display = 'none';
+          } else {
+            nav.style.display = 'block';
+          }
+        }
+      });
+      // Hide nav on resize to desktop, show on mobile
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 991) {
+          nav.style.display = '';
+          trigger.classList.remove('active');
+        } else {
+          nav.style.display = 'none';
+          trigger.classList.remove('active');
+        }
+      });
+      // Hide nav when clicking a nav link (mobile UX)
+      nav.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          if (window.innerWidth <= 991) {
+            nav.style.display = 'none';
+            trigger.classList.remove('active');
+          }
+        });
+      });
+    }
+  }
+  // Run after DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupBurgerMenu);
+  } else {
+    setupBurgerMenu();
+  }
+})();
+</script>
+-->
